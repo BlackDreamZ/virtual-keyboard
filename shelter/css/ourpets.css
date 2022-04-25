@@ -1448,68 +1448,6 @@ h3 {
   border-color: #f1cdb3;
 }
 
-.friends__cards {
-  width: 990px;
-  overflow: hidden;
-}
-
-@media (max-width: 1279px) {
-  .friends__cards {
-    width: 580px;
-  }
-}
-
-@media (max-width: 767px) {
-  .friends__cards {
-    width: 270px;
-  }
-}
-
-.carousel {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 90px;
-  left: -1080px;
-}
-
-@media (max-width: 1279px) {
-  .carousel {
-    gap: 40px;
-    left: -620px;
-  }
-}
-
-@media (max-width: 767px) {
-  .carousel {
-    gap: 0;
-    left: 0;
-  }
-}
-
-.item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 990px;
-  gap: 90px;
-}
-
-@media (max-width: 1279px) {
-  .item {
-    width: 580px;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .item {
-    width: 270px;
-    gap: 0;
-  }
-}
-
 .friends__card {
   position: relative;
   display: block;
@@ -2731,7 +2669,7 @@ h3 {
 }
 
 .friends__cards {
-  width: 100%;
+  width: 990px;
   overflow: hidden;
 }
 
