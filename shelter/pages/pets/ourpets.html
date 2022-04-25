@@ -16,82 +16,110 @@
     <title>Shelter</title>
 </head>
 
-<body>
+<body id="pets-page">
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__logo">
-                    <div class="header__logo-title">Cozy House</div>
-                    <div class="header__logo-text">
-                        Shelter for pets in Boston
+        <header class="header header_pets">
+            <div class="header__wrapper  header__wrapper_pets">
+                <div class="overlay"></div>
+                <a class="link" href="#">
+                    <div class="logo">
+                        <h1 class="logo__title logo__title_pets">Cozy House</h1>
+                        <p class="logo__text logo__text_pets">Shelter for pets in Boston</p>
                     </div>
-                </div>
-                <nav class="header__nav">
-                    <div class="header__nav-burger"><span></span></div>
-                    <a href="../main/index.html" class="header__nav-link">About the shelter</a>
-                    <a href="#" class="header__nav-link active">Our pets</a>
-                    <a href="../main/index.html#help" class="header__nav-link">Help the shelter</a>
-                    <a href="#contacts" class="header__nav-link">Contacts</a>
+                </a>
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <nav class="nav  nav_pets">
+                    <div class="nav__logo">
+                        <a class="link" href="../main/index.html">
+                            <div class="logo">
+                                <h1 class="logo__title logo__title_pets">Cozy House</h1>
+                                <p class="logo__text logo__text_pets">Shelter for pets in Boston</p>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="nav__list">
+                        <li><a class="nav__link nav__link_pets" href="../main/index.html">About
+                                the shelter</a></li>
+                        <li><a class="nav__link nav__link_pets nav__link_active" href="#">Our
+                                pets</a></li>
+                        <li><a class="nav__link nav__link_pets" href="../main/index.html#help">Help
+                                the shelter</a></li>
+                        <li><a class="nav__link nav__link_pets" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
-        <div class="container">
-            <main class="friends">
-                <h1 class="friends__title">Our friends who<br>
-                    are looking for a house</h1>
-                <div class="friends__items">
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-katrine.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Katrine</h4>
-                        <button class="item-friend__more">Learn more</button>
+    </div>
+    <div class="container">
+        <main class="main">
+            <section class="friends" id="friends">
+                <div class="wrapper friends__wrapper friends__wrapper_pets">
+                    <h3 class="friends__title">Our friends who<br>are looking for a house</h3>
+                    <div class="friends__cards friends__cards_pets layout-4-column">
+                        <div class="friends__card" data-id="5"><img class="friends__img"
+                                src="../../assets/images/pets-katrine.png" alt="pet">
+                            <p class="friends__name">Katrine</p><button class="button button_bordered">Learn
+                                more</button>
+                        </div>
+                        <div class="friends__card" data-id="1"><img class="friends__img"
+                                src="../../assets/images/pets-jennifer.png" alt="pet">
+                            <p class="friends__name">Jennifer</p><button class="button button_bordered">Learn
+                                more</button>
+                        </div>
+                        <div class="friends__card" data-id="4"><img class="friends__img"
+                                src="../../assets/images/pets-scarlet.png" alt="pet">
+                            <p class="friends__name">Scarlett</p><button class="button button_bordered">Learn
+                                more</button>
+                        </div>
+                        <div class="friends__card" data-id="3"><img class="friends__img"
+                                src="../../assets/images/pets-woody.png" alt="pet">
+                            <p class="friends__name">Woody</p><button class="button button_bordered">Learn more</button>
+                        </div>
+                        <div class="friends__card" data-id="8"><img class="friends__img"
+                                src="../../assets/images/pets-charly.png" alt="pet">
+                            <p class="friends__name">Charly</p><button class="button button_bordered">Learn
+                                more</button>
+                        </div>
+                        <div class="friends__card" data-id="6"><img class="friends__img"
+                                src="../../assets/images/pets-timmy.png" alt="pet">
+                            <p class="friends__name">Timmy</p><button class="button button_bordered">Learn more</button>
+                        </div>
+                        <div class="friends__card" data-id="7"><img class="friends__img"
+                                src="../../assets/images/pets-freddie.png" alt="pet">
+                            <p class="friends__name">Freddie</p><button class="button button_bordered">Learn
+                                more</button>
+                        </div>
+                        <div class="friends__card" data-id="2"><img class="friends__img"
+                                src="../../assets/images/pets-sophia.png" alt="pet">
+                            <p class="friends__name">Sophia</p><button class="button button_bordered">Learn
+                                more</button>
+                        </div>
                     </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-jennifer.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Jennifer</h4>
-                        <button class="item-friend__more">Learn more</button>
-                    </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-woody.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Woody</h4>
-                        <button class="item-friend__more">Learn more</button>
-                    </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-sophia.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Sophia</h4>
-                        <button class="item-friend__more">Learn more</button>
-                    </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-timmy.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Timmy</h4>
-                        <button class="item-friend__more">Learn more</button>
-                    </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-charly.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Charly</h4>
-                        <button class="item-friend__more">Learn more</button>
-                    </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-scarlet.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Scarlett</h4>
-                        <button class="item-friend__more">Learn more</button>
-                    </div>
-                    <div class="item-friend">
-                        <img src="../../assets/images/pets-freddie.png" alt="" class="item-friend__image">
-                        <h4 class="item-friend__name">Freddie</h4>
-                        <button class="item-friend__more">Learn more</button>
+                    <div class="friends__pagination">
+                        <a class="footer__link pagination__link_first-page inactive" href="#.">
+                            <div class="friends__arrow friends__arrow_pets_first-page">&lt;&lt;</div>
+                        </a>
+                        <a class="footer__link pagination__link_left inactive" href="#.">
+                            <div class="friends__arrow friends__arrow_pets_left">&lt;</div>
+                        </a>
+                        <div class="friends__arrow friends__arrow_active">1</div>
+                        <a class="footer__link pagination__link_right" href="#.">
+                            <div class="friends__arrow friends__arrow_pets_right">&gt;</div>
+                        </a>
+                        <a class="footer__link pagination__link_last-page" href="#.">
+                            <div class="friends__arrow friends__arrow_pets_last-page">&gt;&gt;</div>
+                        </a>
                     </div>
                 </div>
-                <div class="friends__buttons">
-                    <button disabled="disabled">&#60;</button>
-                    <button disabled="disabled">&#60; &#60;</button>
-                    <button class="active">1</button>
-                    <button>&#62;</button>
-                    <button>&#62; &#62;</button>
-                </div>
-            </main>
-        </div>
-        <footer class="footer" id="contacts">
-            <div class="footer__container">
+            </section>
+        </main>
+    </div>
+    <footer class="footer" id="contacts">
+        <div class="wrapper">
+            <div class="footer__container container">
                 <div class="footer-contacts">
                     <h3 class="footer-contacts__title">For questions and suggestions</h3>
                     <div class="footer-contacts__item">
@@ -116,8 +144,8 @@
                 </div>
                 <img src="../../assets/images/footer-puppy.png" alt="puppy" class="footer-right">
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
