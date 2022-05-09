@@ -1,0 +1,127 @@
+@import "~normalize.css";
+@import "_fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Koulen";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    height: 100%;
+    max-height: 635px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(73, 47, 223, 0.8);
+    border: 2px solid rgb(34, 29, 19);
+    border-radius: 10px 0 10px 0;
+
+    &__output {
+        display: flex;
+        width: 850px;
+        flex: 1;
+        gap: 20px;
+    }
+
+    &__input {
+        border: 1px solid black;
+        border-radius: 10px 0 10px 0;
+        padding: 20px;
+        outline: none;
+        resize: none;
+        background: none;
+        flex: 1;
+        color: rgb(209, 203, 189);
+        font-size: 16px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background: none;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(209, 203, 189);
+            border-radius: 5px;
+        }
+    }
+
+    &__info {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        white-space: pre-line;
+        color: rgb(209, 203, 189);
+    }
+
+    &__os {
+        font-size: 12px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 850px;
+        margin: 0 auto;
+    }
+
+    &__line {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__btn {
+        border: 2px solid rgb(209, 203, 189);
+        height: 45px;
+        width: 45px;
+        border-radius: 10px 0 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        transition: 0.1s;
+        cursor: pointer;
+        color: rgb(209, 203, 189);
+        user-select: none;
+        transform: scale(1);
+
+        &_big {
+            width: 90px;
+            font-size: 14px;
+        }
+
+        &_space {
+            width: 265px;
+        }
+
+        &.isPushed {
+            color: rgba(101, 220, 152, 1);
+            border-color: rgba(101, 220, 152, 1);
+        }
+
+        &.hover {
+            background-color: rgba(45, 40, 36, 0.9);
+        }
+
+        &.active {
+            background-color: rgba(101, 220, 152, 0.7);
+            color: rgba(45, 40, 36, 1);
+            transform: scale(0.9);
+        }
+    }
+}
